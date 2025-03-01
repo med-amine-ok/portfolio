@@ -1,0 +1,255 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 97%;
+    background: #f4f4f4;
+    color: #333;
+    align-items: center;
+}
+
+.profile-photo {
+    width: 250px;
+    height: 250px;
+    border-radius: 40%;
+    margin-bottom: 15px;
+    border: 3px solid transparent;
+    align-self: center; 
+    transition: all 0.3s ease-in-out;
+    
+}
+.profile-photo:hover {
+    transform: scale(1.1);
+    border-radius: 50%;
+    border-color: #ff9800;
+    
+}
+
+.profile-name {
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-align: center;
+    transition: color 0.3s ease;
+}
+.profile-name:hover{
+    color: #ff9800;
+}
+.profile-title {
+    font-size: 1rem;
+    font-weight: 400;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #bbb;
+    transition: color 0.3s ease;
+}
+.profile-title:hover{
+    color: #ff9800;
+}
+.main-nav {
+    width: 100%;
+    background: #1e1e2f;
+    color: #fff;
+    padding: 15px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000; 
+    display: flex;
+    justify-content: center;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.main-nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    padding: 0;
+    margin: 0;
+}
+
+.main-nav li {
+    margin: 0;
+}
+
+.main-nav a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.1rem;
+    padding: 10px 15px;
+    transition: color 0.3s;
+}
+
+.main-nav a:hover {
+    color: #ff9800;
+}
+
+.main-content {
+    margin-top: 70px;
+}
+
+.social-links a {
+    color: #fff;
+    font-size: 1.4rem;
+    margin: 0 10px;
+    transition: color 0.3s;
+}
+.social-links a:hover {
+    color: #ff9800;
+}
+
+
+.main-content {
+    margin: 50px; 
+    padding: 50px;
+    max-width: 1200px;
+    flex: 1;
+}
+
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 50px;
+    padding: 50px;
+    background: linear-gradient(135deg, #ff9800, #ff5722);
+    color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+.hero-text h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+.cta-button {
+    display: inline-block;
+    padding: 12px 25px;
+    background: #fff;
+    color: #ff5722;
+    font-size: 1rem;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 600;
+    margin-top: 15px;
+    transition: background 0.3s, color 0.3s;
+}
+.cta-button:hover {
+    background: #ff5722;
+    color: #fff;
+}
+
+.section {
+    margin-bottom: 50px;
+}
+.section-title {
+    font-size: 2rem;
+    font-weight: 600;
+    border-bottom: 5px solid #ff5722;
+    padding-left: 10px;
+    margin-bottom: 20px;
+    transition: all 0.3s ease-in-out;
+}
+
+.section-title:hover {
+    border-bottom: none;
+    border-left: 5px solid #ff5722;
+    padding-left: 15px; 
+}
+
+
+.work-grid, .skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 80px;
+}
+.work-item, .skill-item {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s;
+}
+.work-item:hover, .skill-item:hover {
+    transform: translateY(-5px);
+}
+
+.skill-item i, .work-item i {
+    font-size: 2rem;
+    color: #ff5722;
+    margin-bottom: 10px;
+}
+
+
+.contact-info p {
+    font-size: 1.1rem;
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.contact-info i {
+    color: #ff5722;
+    margin-right: 10px;
+}
+
+
+.footer {
+    text-align: center;
+    padding: 20px;
+    background: #1e1e2f;
+    color: #fff;
+    width: 100%;
+    height: 50px;
+    margin-left: 0;
+    margin-top: auto;
+}
+
+@media (max-width: 789px) {
+    .profile-photo{
+        width: 140px;
+        height: 140px;
+        margin-top: 20px;
+    }
+    .nav-text {
+        display: none;
+    }
+
+    .main-nav a {
+        padding: 10px;
+    }
+
+    .main-nav ul {
+        gap: 10px;
+    }
+
+    .hero {
+        display: flex;
+        flex-direction: column;
+        position: center;
+        align-items: center;
+        text-align: center;
+        margin-left: 20px;
+       
+    }
+    /* .hero-images img {
+        width: 100%; 
+        height: auto;
+        max-width: 500px; 
+    } */
+    .footer {
+        position: relative;
+        text-align: center;
+        padding: 15px;
+        width: 100%;
+    }
+    body {
+        align-items: center;
+        margin: 0;
+        padding: 0;
+        font-size: 16px;
+        line-height: 1.5;
+    }
+}
