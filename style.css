@@ -191,12 +191,20 @@ body {
     display: flex;
     align-items: center;
     margin-bottom: 10px;
+    transition: transform 0.3s ;
+}
+
+.contact-info p:hover {
+    transform: translateX(3px);
 }
 .contact-info i {
     color: #ff5722;
     margin-right: 10px;
 }
-
+.contact-info a {
+    color: #1e1e2f;
+    text-decoration: none; 
+}
 
 .footer {
     text-align: center;
